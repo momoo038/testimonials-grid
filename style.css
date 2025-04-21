@@ -130,3 +130,60 @@ body {
     font-size: 1rem;
     color: #666;
 }
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 15px 0;
+        min-height: 100vh;
+    }
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        max-width: 92%;
+        margin: 15px auto;
+    }
+    
+    .card {
+        margin: 8px 0;
+        padding: 20px;
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .nr1, .nr2, .nr3, .nr4, .nr5 {
+        grid-column: 1;
+        width: 100%;
+    }
+    
+    .nr3, .nr4 {
+        padding: 20px;
+    }
+    
+    .quote {
+        width: 100px;
+        height: 100px;
+        top: -29px;
+        right: 15px;
+    }
+    
+    .title {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .description {
+        font-size: 0.9rem;
+    }
+    
+    .user {
+        padding: 5px;
+        margin-bottom: 8px;
+    }
+    
+    .user > .icon {
+        width: 35px;
+        height: 35px;
+    }
+}
